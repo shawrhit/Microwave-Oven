@@ -1,3 +1,4 @@
+#include <xc.h>
 #include "oven.h"
 #include "clcd.h"
 #include "builtins.h"
@@ -8,6 +9,8 @@
  * Contains functions to draw power screens, time/temperature input,
  * and countdown/preheat displays. Uses CLCD HAL for placement.
  */
+
+
 
 void display_power_screen(void)
 {
@@ -201,4 +204,46 @@ void display_preheat_time_remaining(unsigned int total_seconds)
     // Print Seconds (Tens and Ones)
     clcd_putch((sec / 10) + '0', LINE3(8));
     clcd_putch((sec % 10) + '0', LINE3(9));
+}
+
+void display_cooking_complete_screen(void)
+{
+    int i;
+    int j;
+    
+    // Draw top border: Line 1 filled with solid block character (0xFF)
+    // Creates a decorative frame that provides visual feedback for cooking completion
+    for (i = 0; i < 16; i++)
+    {
+        clcd_putch(0xFF, LINE1((unsigned char)i));
+    }
+
+    // Draw bottom border: Line 4 filled with solid block character (0xFF)
+    // Completes the decorative frame around the completion message
+    for (i = 0; i < 16; i++)
+    {
+        clcd_putch(0xFF, LINE4((unsigned char)i));
+    }
+
+    // Flash the completion message twice (visual feedback to user that cooking is done)
+    // The loop creates a flashing effect: show text for 2 seconds, hide for 1 second, repeat
+    for(j = 0; j < 2; j++){
+
+        // Display "Time" on line 2, centered at position 6
+        clcd_print("Time", LINE2(6));
+        
+        // Display "Complete" on line 3, centered at position 4
+        clcd_print("Complete", LINE3(4));
+
+        // Keep message visible for 2 seconds
+        __delay_ms(2000);
+
+        // Clear both lines 2 and 3 to create the flashing effect
+        clcd_print("                ", LINE2(0));
+        clcd_print("                ", LINE3(0));
+        // Pause 1 second before showing message again (or ending if last loop iteration)
+        __delay_ms(1000);
+
+    }
+
 }

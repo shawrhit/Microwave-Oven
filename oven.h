@@ -11,6 +11,10 @@
 #define FAN                 RC2
 #define FAN_DDR             TRISC2
 
+// Buzzer Control Pin
+#define BUZZER              RC1
+#define BUZZER_DDR          TRISC1
+
 // Screen States
 #define POWER_SCREEN        0x01
 #define MODES_SCREEN        0x02
@@ -39,5 +43,7 @@ void display_temp_screen(void);
 void display_temp(unsigned char *temp_digits, unsigned char cursor_pos);
 void display_preheat_banner(void);
 void display_preheat_time_remaining(unsigned int total_seconds);
+void beep(unsigned char count);
+void display_cooking_complete_screen(void);
 
 #endif    /* OVEN_H */

@@ -28,8 +28,10 @@ static void init_config(void) {
     init_timer2();
     init_clcd();
     init_matrix_keypad();
-    FAN_DDR = 0; // Set FAN pin as output
-    FAN = 0;     // Turn off FAN initially
+    FAN_DDR = 0;    // Set FAN pin as output
+    FAN = 0;        // Turn off FAN initially
+    BUZZER_DDR = 0; // Set BUZZER pin as output
+    BUZZER = 0;     // Turn off BUZZER initially
 }
 
 void __interrupt() isr(void)
@@ -67,7 +69,8 @@ while (1)
             case POWER_SCREEN:
                 // Splash screen; blocking delay acceptable for startup UX
                 display_power_screen();
-                __delay_ms(1000);
+                
+                __delay_ms(250); // Complete the display time
                 
                 clear_screen();
                 
@@ -84,18 +87,20 @@ while (1)
                 FAN = 0; // Ensure FAN is off in menu
                 
                 if (key == 1) {
-
+                    beep(1);  // Beep on key press
                     screen_flag =  MICRO_MODE;
                     
                 }
                 else if (key == 2) {
-                    
+                    beep(1);  // Beep on key press
                     screen_flag = GRILL_MODE;
                 }
                 else if (key == 3) {
+                    beep(1);  // Beep on key press
                     screen_flag = CONVECTION_MODE;
                 }
                 else if (key == 4) {
+                    beep(1);  // Beep on key press
                     screen_flag = QUICK_START_MODE;
                 }
                 break;
@@ -154,20 +159,24 @@ while (1)
                         // Valid digit key (1-9) and space available
                         time_digits[pos] = key;
                         pos++;
+                        beep(1);  // Beep on key press
                     }
                     else if ((key == (unsigned char)0) && pos < 4) {
                         // Key 0 also valid for time input
                         time_digits[pos] = 0;
                         pos++;
+                        beep(1);  // Beep on key press
                     }
                     else if (key == (unsigned char)'*') { 
                         // '*' key for CLEAR - reset all time digits and position
+                        beep(1);  // Beep on key press
                         for (unsigned char i = 0; i < 4; i++) {
                             time_digits[i] = 0;
                         }
                         pos = 0;
                     }
                     else if (key == (unsigned char)'#') { 
+                        beep(1);  // Beep on key press
                         // '#' key for CONFIRM - compute total seconds and start cooking
                         total_seconds = (unsigned int)(time_digits[0] * 600
                                         + time_digits[1] * 60
@@ -203,6 +212,7 @@ while (1)
 
                     if (key >= 1 && key <= 9 && temp_pos < 3) {
                         temp_digits[temp_pos] = key;
+                        beep(1);  // Beep on key press
                         temp_pos++;
                     }
                     else if ((key == (unsigned char)0) && temp_pos < 3) {
@@ -256,14 +266,17 @@ while (1)
 
                 // Handle Keys (Start/Resume, Pause, Stop)
                 if (key == 4) { // Start/Resume or +30s
+                    beep(1);  // Beep on key press
                     if (total_seconds > 0 && TMR2ON == 0) {
                         TMR2ON = 1; // Resume if paused
                     } else if (TMR2ON == 1) {
                         total_seconds += 30; // Add 30 seconds when running
                     }
                 } else if (key == 5) { // Pause
+                    beep(1);  // Beep on key press
                     TMR2ON = 0; // Pause timer (FAN will turn off via TMR2ON check)
                 } else if (key == 6) { // Stop
+                    beep(1);  // Beep on key press
                     TMR2ON = 0;
                     FAN = 0;
                     clear_screen();
@@ -276,6 +289,10 @@ while (1)
                 if (total_seconds == 0) {
                     TMR2ON = 0;
                     FAN = 0;    // Turn off FAN when countdown completes
+                    
+                    clear_screen();
+                    display_cooking_complete_screen();
+                    //__delay_ms(2000); // Show complete screen for 2 seconds
                     clear_screen();
                     display_modes();
                     screen_flag = MODES_SCREEN;

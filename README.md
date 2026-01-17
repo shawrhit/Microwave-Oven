@@ -18,6 +18,7 @@ A PIC microcontroller-based microwave oven firmware with a modular architecture 
 - Keypad Rows: `RD3–RD0` (outputs, pulled LOW to scan)
 - Keypad Columns: `RB2–RB0` (inputs, pullups enabled)
 - FAN: `RC2` (output, controlled during cooking/preheating)
+- Buzzer: `RC1` (output, beeps on countdown completion)
 
 ## Build Instructions
 
@@ -84,13 +85,21 @@ FSM uses pre-draw before switching states to minimize LCD flicker, and sparse up
 - Volatile globals: `timer2_counter`, `total_seconds`
 - Timer2 remains OFF until cooking begins; controlled via `TMR2ON` in FSM
 
+## Hardware Controls
+
+- **FAN** (RC2): Turns ON when Timer2 is actively running (cooking/preheating); OFF during pause, stop, or idle
+- **BUZZER** (RC1): Simple on/off piezo buzzer with practical feedback patterns:
+  - 2 beeps on startup (POWER_SCREEN)
+  - 3 beeps when cooking completes (CLOCK_COUNTDOWN completion)
+  - 1 beep per key press in menu mode
+
 ## Development Notes
 
 - Cursor handling: Time/Temp input uses digit highlighting via redraw; cursor is hidden on confirm `#`
 - Flicker mitigation: Pre-draw screens on entry and only update changing fields during countdown
-- Convection preheat: Placeholder 10 seconds; can be tied to temperature in future
-- No persistent settings yet; EEPROM could store favorites
-- Audio not integrated; hardware blocks exist
+- Convection preheat: Fixed 10-second placeholder; can be tied to temperature calculation in future enhancements
+- No persistent settings; EEPROM storage could be added for user favorites
+- All code thoroughly commented with module headers and inline documentation
 
 ## Files
 

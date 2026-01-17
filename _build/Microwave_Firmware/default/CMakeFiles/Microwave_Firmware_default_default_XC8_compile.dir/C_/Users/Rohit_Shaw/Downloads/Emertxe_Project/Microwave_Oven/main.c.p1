@@ -9,34 +9,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _TRISC2 `Vb ~T0 @X0 0 e@1082 ]
 "2712
 [v _RC2 `Vb ~T0 @X0 0 e@58 ]
+"2964
+[v _TRISC1 `Vb ~T0 @X0 0 e@1081 ]
+"2709
+[v _RC1 `Vb ~T0 @X0 0 e@57 ]
 [t ~ __interrupt . k ]
 [t T1 __interrupt ]
 "2901
 [v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
 [p mainexit ]
-"29 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+"33 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
 [v _display_power_screen `(v ~T0 @X0 0 ef ]
 [v F42 `(v ~T0 @X0 1 tf1`ul ]
 "20 c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\include/builtins.h
 [v __delay `JF42 ~T0 @X0 0 e ]
 [p i __delay ]
-"30 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+"34 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
 [v _clear_screen `(v ~T0 @X0 0 ef ]
-"31
+"35
 [v _display_modes `(v ~T0 @X0 0 ef ]
 "31 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/matrix_keypad.h
 [v _read_matrix_keypad `(uc ~T0 @X0 0 ef1`uc ]
-"32 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
-[v _display_micro_mode_power `(v ~T0 @X0 0 ef ]
-"33
-[v _display_time_screen `(v ~T0 @X0 0 ef ]
+"46 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+[v _beep `(v ~T0 @X0 0 ef1`uc ]
 "36
-[v _display_grill_mode_power `(v ~T0 @X0 0 ef ]
+[v _display_micro_mode_power `(v ~T0 @X0 0 ef ]
 "37
+[v _display_time_screen `(v ~T0 @X0 0 ef ]
+"40
+[v _display_grill_mode_power `(v ~T0 @X0 0 ef ]
+"41
 [v _display_convection_mode_banner `(v ~T0 @X0 0 ef ]
-"38
+"42
 [v _display_temp_screen `(v ~T0 @X0 0 ef ]
-"34
+"38
 [v _display_time `(v ~T0 @X0 0 ef2`*uc`uc ]
 "2904 C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877a.h
 [v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
@@ -44,14 +50,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _clcd_write `(v ~T0 @X0 0 ef2`uc`uc ]
 "42
 [v _clcd_print `(v ~T0 @X0 0 ef2`*Cuc`uc ]
-"35 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+"39 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
 [v _display_time_remaining `(v ~T0 @X0 0 ef1`ui ]
-"39
+"43
 [v _display_temp `(v ~T0 @X0 0 ef2`*uc`uc ]
-"40
+"44
 [v _display_preheat_banner `(v ~T0 @X0 0 ef ]
-"41
+"45
 [v _display_preheat_time_remaining `(v ~T0 @X0 0 ef1`ui ]
+"47
+[v _display_cooking_complete_screen `(v ~T0 @X0 0 ef ]
 "52 C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877a.h
 [; <" INDF equ 00h ;# ">
 "59
@@ -234,141 +242,153 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [e = _RC2 -> -> 0 `i `b ]
 "33
+[e = _TRISC1 -> -> 0 `i `b ]
+"34
+[e = _RC1 -> -> 0 `i `b ]
+"35
 [e :UE 99 ]
 }
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"35
+"37
 [v _isr `(v ~T1 @X0 1 ef ]
-"36
+"38
 {
 [e :U _isr ]
 [f ]
-"38
+"40
 [e $ ! == -> _TMR2IF `i -> 1 `i 101  ]
-"39
-{
 "41
-[e ++ _timer2_counter -> -> 1 `i `Vui ]
-"44
-[e $ ! == _timer2_counter -> -> 1250 `i `ui 102  ]
-"45
 {
+"43
+[e ++ _timer2_counter -> -> 1 `i `Vui ]
 "46
-[e $ ! > _total_seconds -> -> 0 `i `ui 103  ]
+[e $ ! == _timer2_counter -> -> 1250 `i `ui 102  ]
 "47
 {
 "48
-[e -- _total_seconds -> -> 1 `i `Vui ]
+[e $ ! > _total_seconds -> -> 0 `i `ui 103  ]
 "49
-}
-[e :U 103 ]
+{
 "50
-[e = _timer2_counter -> -> 0 `i `ui ]
+[e -- _total_seconds -> -> 1 `i `Vui ]
 "51
 }
+[e :U 103 ]
+"52
+[e = _timer2_counter -> -> 0 `i `ui ]
+"53
+}
 [e :U 102 ]
-"54
+"56
 [e = _TMR2IF -> -> 0 `i `b ]
-"55
+"57
 }
 [e :U 101 ]
-"56
+"58
 [e :UE 100 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"58
+"60
 [v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"59
+"61
 [e ( _init_config ..  ]
-"60
+"62
 [v _screen_flag `uc ~T0 @X0 1 a ]
 [e = _screen_flag -> -> 1 `i `uc ]
-"61
+"63
 [v _key `uc ~T0 @X0 1 a ]
 [e = _key -> -> 255 `i `uc ]
-"63
-[e :U 106 ]
-"64
-{
 "65
-[e $U 109  ]
+[e :U 106 ]
+"66
 {
 "67
-[e :U 110 ]
+[e $U 109  ]
+{
 "69
+[e :U 110 ]
+"71
 [e ( _display_power_screen ..  ]
-"70
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"72
-[e ( _clear_screen ..  ]
+"73
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "75
-[e ( _display_modes ..  ]
-"77
-[e = _screen_flag -> -> 2 `i `uc ]
+[e ( _clear_screen ..  ]
 "78
-[e $U 108  ]
+[e ( _display_modes ..  ]
 "80
+[e = _screen_flag -> -> 2 `i `uc ]
+"81
+[e $U 108  ]
+"83
 [e :U 111 ]
-"82
+"85
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"84
+"87
 [e = _RC2 -> -> 0 `i `b ]
-"86
+"89
 [e $ ! == -> _key `i -> 1 `i 112  ]
 {
-"88
-[e = _screen_flag -> -> 3 `i `uc ]
 "90
+[e ( _beep (1 -> -> 1 `i `uc ]
+"91
+[e = _screen_flag -> -> 3 `i `uc ]
+"93
 }
 [e $U 113  ]
-"91
+"94
 [e :U 112 ]
 [e $ ! == -> _key `i -> 2 `i 114  ]
 {
-"93
+"95
+[e ( _beep (1 -> -> 1 `i `uc ]
+"96
 [e = _screen_flag -> -> 6 `i `uc ]
-"94
+"97
 }
 [e $U 115  ]
-"95
+"98
 [e :U 114 ]
 [e $ ! == -> _key `i -> 3 `i 116  ]
 {
-"96
+"99
+[e ( _beep (1 -> -> 1 `i `uc ]
+"100
 [e = _screen_flag -> -> 7 `i `uc ]
-"97
+"101
 }
 [e $U 117  ]
-"98
+"102
 [e :U 116 ]
 [e $ ! == -> _key `i -> 4 `i 118  ]
 {
-"99
+"103
+[e ( _beep (1 -> -> 1 `i `uc ]
+"104
 [e = _screen_flag -> -> 8 `i `uc ]
-"100
+"105
 }
 [e :U 118 ]
 [e :U 117 ]
 [e :U 115 ]
 [e :U 113 ]
-"101
-[e $U 108  ]
-"103
-[e :U 119 ]
-"104
-[e ( _clear_screen ..  ]
-"105
-[e ( _display_micro_mode_power ..  ]
 "106
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"107
-[e ( _clear_screen ..  ]
+[e $U 108  ]
 "108
-[e ( _display_time_screen ..  ]
+[e :U 119 ]
+"109
+[e ( _clear_screen ..  ]
 "110
+[e ( _display_micro_mode_power ..  ]
+"111
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"112
+[e ( _clear_screen ..  ]
+"113
+[e ( _display_time_screen ..  ]
+"115
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -376,31 +396,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 121  ]
 [e :U 120 ]
 {
-"111
+"116
 [e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
-"112
+"117
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 120  ]
 [e :U 121 ]
 }
-"113
+"118
 [e = _pos -> -> 0 `i `uc ]
-"114
-[e = _screen_flag -> -> 4 `i `uc ]
-"115
-[e $U 108  ]
-"117
-[e :U 123 ]
 "119
-[e ( _display_grill_mode_power ..  ]
+[e = _screen_flag -> -> 4 `i `uc ]
 "120
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e $U 108  ]
 "122
-[e ( _clear_screen ..  ]
-"123
-[e ( _display_time_screen ..  ]
+[e :U 123 ]
+"124
+[e ( _display_grill_mode_power ..  ]
 "125
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"127
+[e ( _clear_screen ..  ]
+"128
+[e ( _display_time_screen ..  ]
+"130
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -408,31 +428,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 125  ]
 [e :U 124 ]
 {
-"126
+"131
 [e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
-"127
+"132
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 124  ]
 [e :U 125 ]
 }
-"128
-[e = _pos -> -> 0 `i `uc ]
-"129
-[e = _screen_flag -> -> 4 `i `uc ]
-"130
-[e $U 108  ]
-"132
-[e :U 127 ]
 "133
-[e ( _display_convection_mode_banner ..  ]
+[e = _pos -> -> 0 `i `uc ]
 "134
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"136
-[e ( _clear_screen ..  ]
+[e = _screen_flag -> -> 4 `i `uc ]
+"135
+[e $U 108  ]
 "137
-[e ( _display_temp_screen ..  ]
+[e :U 127 ]
 "138
+[e ( _display_convection_mode_banner ..  ]
+"139
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"141
+[e ( _clear_screen ..  ]
+"142
+[e ( _display_temp_screen ..  ]
+"143
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -440,54 +460,60 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 129  ]
 [e :U 128 ]
 {
-"139
+"144
 [e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"140
+"145
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 128  ]
 [e :U 129 ]
 }
-"141
+"146
 [e = _temp_pos -> -> 0 `i `uc ]
-"142
-[e = _screen_flag -> -> 9 `i `uc ]
-"143
-[e $U 108  ]
-"145
-[e :U 131 ]
 "147
+[e = _screen_flag -> -> 9 `i `uc ]
+"148
+[e $U 108  ]
+"150
+[e :U 131 ]
+"152
 [e ( _display_time (2 , &U _time_digits _pos ]
-"149
+"154
 [e = _RC2 -> -> 0 `i `b ]
-"151
+"156
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"153
+"158
 [e $ ! && && >= -> _key `i -> 1 `i <= -> _key `i -> 9 `i < -> _pos `i -> 4 `i 132  ]
 {
-"155
-[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux _key ]
-"156
-[e ++ _pos -> -> 1 `i `uc ]
-"157
-}
-[e $U 133  ]
-"158
-[e :U 132 ]
-[e $ ! && == -> _key `i -> -> -> 0 `i `uc `i < -> _pos `i -> 4 `i 134  ]
-{
 "160
-[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux _key ]
 "161
 [e ++ _pos -> -> 1 `i `uc ]
 "162
+[e ( _beep (1 -> -> 1 `i `uc ]
+"163
+}
+[e $U 133  ]
+"164
+[e :U 132 ]
+[e $ ! && == -> _key `i -> -> -> 0 `i `uc `i < -> _pos `i -> 4 `i 134  ]
+{
+"166
+[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"167
+[e ++ _pos -> -> 1 `i `uc ]
+"168
+[e ( _beep (1 -> -> 1 `i `uc ]
+"169
 }
 [e $U 135  ]
-"163
+"170
 [e :U 134 ]
 [e $ ! == -> _key `i -> -> -> 42 `ui `uc `i 136  ]
 {
-"165
+"172
+[e ( _beep (1 -> -> 1 `i `uc ]
+"173
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -495,93 +521,97 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 138  ]
 [e :U 137 ]
 {
-"166
+"174
 [e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
-"167
+"175
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 137  ]
 [e :U 138 ]
 }
-"168
+"176
 [e = _pos -> -> 0 `i `uc ]
-"169
+"177
 }
 [e $U 140  ]
-"170
+"178
 [e :U 136 ]
 [e $ ! == -> _key `i -> -> -> 35 `ui `uc `i 141  ]
 {
-"172
-[e = _total_seconds -> + + + * -> *U + &U _time_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 600 `i * -> *U + &U _time_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 60 `i * -> *U + &U _time_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 10 `i -> *U + &U _time_digits * -> -> -> 3 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i `ui ]
-"176
-[e = _timer2_counter -> -> 0 `i `ui ]
-"177
-[e = _TMR2IF -> -> 0 `i `b ]
-"178
-[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
+"179
+[e ( _beep (1 -> -> 1 `i `uc ]
 "181
-[e ( _clear_screen ..  ]
-"182
-[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
-"183
-[e ( _clcd_print (2 , :s 1C -> + -> 128 `i -> 1 `i `uc ]
-"184
-[e ( _clcd_print (2 , :s 2C -> + -> 192 `i -> 2 `i `uc ]
+[e = _total_seconds -> + + + * -> *U + &U _time_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 600 `i * -> *U + &U _time_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 60 `i * -> *U + &U _time_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 10 `i -> *U + &U _time_digits * -> -> -> 3 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i `ui ]
 "185
-[e ( _clcd_print (2 , :s 3C -> + -> 144 `i -> 2 `i `uc ]
+[e = _timer2_counter -> -> 0 `i `ui ]
 "186
-[e ( _clcd_print (2 , :s 4C -> + -> 208 `i -> 2 `i `uc ]
+[e = _TMR2IF -> -> 0 `i `b ]
 "187
-[e ( _display_time_remaining (1 _total_seconds ]
-"188
-[e = _last_total_seconds _total_seconds ]
+[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
 "190
-[e = _screen_flag -> -> 5 `i `uc ]
+[e ( _clear_screen ..  ]
 "191
-[e $U 108  ]
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
 "192
+[e ( _clcd_print (2 , :s 1C -> + -> 128 `i -> 1 `i `uc ]
+"193
+[e ( _clcd_print (2 , :s 2C -> + -> 192 `i -> 2 `i `uc ]
+"194
+[e ( _clcd_print (2 , :s 3C -> + -> 144 `i -> 2 `i `uc ]
+"195
+[e ( _clcd_print (2 , :s 4C -> + -> 208 `i -> 2 `i `uc ]
+"196
+[e ( _display_time_remaining (1 _total_seconds ]
+"197
+[e = _last_total_seconds _total_seconds ]
+"199
+[e = _screen_flag -> -> 5 `i `uc ]
+"200
+[e $U 108  ]
+"201
 }
 [e :U 141 ]
 [e :U 140 ]
 [e :U 135 ]
 [e :U 133 ]
-"194
+"203
 [e $U 108  ]
-"196
+"205
 [e :U 142 ]
-"198
+"207
 [e ( _display_temp (2 , &U _temp_digits _temp_pos ]
-"200
+"209
 [e = _RC2 -> -> 0 `i `b ]
-"202
+"211
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"204
+"213
 [e $ ! && && >= -> _key `i -> 1 `i <= -> _key `i -> 9 `i < -> _temp_pos `i -> 3 `i 143  ]
 {
-"205
+"214
 [e = *U + &U _temp_digits * -> _temp_pos `ux -> -> # *U &U _temp_digits `ui `ux _key ]
-"206
+"215
+[e ( _beep (1 -> -> 1 `i `uc ]
+"216
 [e ++ _temp_pos -> -> 1 `i `uc ]
-"207
+"217
 }
 [e $U 144  ]
-"208
+"218
 [e :U 143 ]
 [e $ ! && == -> _key `i -> -> -> 0 `i `uc `i < -> _temp_pos `i -> 3 `i 145  ]
 {
-"209
+"219
 [e = *U + &U _temp_digits * -> _temp_pos `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"210
+"220
 [e ++ _temp_pos -> -> 1 `i `uc ]
-"211
+"221
 }
 [e $U 146  ]
-"212
+"222
 [e :U 145 ]
 [e $ ! == -> _key `i -> -> -> 42 `ui `uc `i 147  ]
 {
-"213
+"223
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -589,216 +619,226 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 149  ]
 [e :U 148 ]
 {
-"214
+"224
 [e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
-"215
+"225
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 3 `i 148  ]
 [e :U 149 ]
 }
-"216
+"226
 [e = _temp_pos -> -> 0 `i `uc ]
-"217
+"227
 }
 [e $U 151  ]
-"218
+"228
 [e :U 147 ]
 [e $ ! == -> _key `i -> -> -> 35 `ui `uc `i 152  ]
 {
-"220
+"230
 [v _temp_value `ui ~T0 @X0 1 a ]
 [e = _temp_value -> + + * -> *U + &U _temp_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 100 `i * -> *U + &U _temp_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 10 `i -> *U + &U _temp_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i `ui ]
-"223
-[e _temp_value ]
-"225
-[e = _total_seconds -> -> 30 `i `ui ]
-"226
-[e = _timer2_counter -> -> 0 `i `ui ]
-"227
-[e = _TMR2IF -> -> 0 `i `b ]
-"228
-[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
-"230
-[e ( _clear_screen ..  ]
-"231
-[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
-"232
-[e ( _display_preheat_banner ..  ]
 "233
-[e ( _display_preheat_time_remaining (1 _total_seconds ]
-"234
-[e = _last_total_seconds _total_seconds ]
+[e _temp_value ]
+"235
+[e = _total_seconds -> -> 30 `i `ui ]
 "236
-[e = _screen_flag -> -> 10 `i `uc ]
+[e = _timer2_counter -> -> 0 `i `ui ]
 "237
+[e = _TMR2IF -> -> 0 `i `b ]
+"238
+[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
+"240
+[e ( _clear_screen ..  ]
+"241
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+"242
+[e ( _display_preheat_banner ..  ]
+"243
+[e ( _display_preheat_time_remaining (1 _total_seconds ]
+"244
+[e = _last_total_seconds _total_seconds ]
+"246
+[e = _screen_flag -> -> 10 `i `uc ]
+"247
 }
 [e :U 152 ]
 [e :U 151 ]
 [e :U 146 ]
 [e :U 144 ]
-"238
+"248
 [e $U 108  ]
-"240
+"250
 [e :U 153 ]
-"242
+"252
 [e $ ! != _total_seconds _last_total_seconds 154  ]
 {
-"243
+"253
 [e ( _display_time_remaining (1 _total_seconds ]
-"244
+"254
 [e = _last_total_seconds _total_seconds ]
-"245
+"255
 }
 [e :U 154 ]
-"248
+"258
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"251
+"261
 [e $ ! == -> _TMR2ON `i -> 1 `i 155  ]
 {
-"252
+"262
 [e = _RC2 -> -> 1 `i `b ]
-"253
+"263
 }
 [e $U 156  ]
 [e :U 155 ]
 {
-"254
+"264
 [e = _RC2 -> -> 0 `i `b ]
-"255
+"265
 }
 [e :U 156 ]
-"258
+"268
 [e $ ! == -> _key `i -> 4 `i 157  ]
 {
-"259
+"269
+[e ( _beep (1 -> -> 1 `i `uc ]
+"270
 [e $ ! && > _total_seconds -> -> 0 `i `ui == -> _TMR2ON `i -> 0 `i 158  ]
 {
-"260
+"271
 [e = _TMR2ON -> -> 1 `i `b ]
-"261
+"272
 }
 [e $U 159  ]
 [e :U 158 ]
 [e $ ! == -> _TMR2ON `i -> 1 `i 160  ]
 {
-"262
+"273
 [e =+ _total_seconds -> -> 30 `i `Vui ]
-"263
+"274
 }
 [e :U 160 ]
 [e :U 159 ]
-"264
+"275
 }
 [e $U 161  ]
 [e :U 157 ]
 [e $ ! == -> _key `i -> 5 `i 162  ]
 {
-"265
+"276
+[e ( _beep (1 -> -> 1 `i `uc ]
+"277
 [e = _TMR2ON -> -> 0 `i `b ]
-"266
+"278
 }
 [e $U 163  ]
 [e :U 162 ]
 [e $ ! == -> _key `i -> 6 `i 164  ]
 {
-"267
+"279
+[e ( _beep (1 -> -> 1 `i `uc ]
+"280
 [e = _TMR2ON -> -> 0 `i `b ]
-"268
+"281
 [e = _RC2 -> -> 0 `i `b ]
-"269
+"282
 [e ( _clear_screen ..  ]
-"270
+"283
 [e ( _display_modes ..  ]
-"271
+"284
 [e = _screen_flag -> -> 2 `i `uc ]
-"272
+"285
 [e $U 108  ]
-"273
+"286
 }
 [e :U 164 ]
 [e :U 163 ]
 [e :U 161 ]
-"276
+"289
 [e $ ! == _total_seconds -> -> 0 `i `ui 165  ]
 {
-"277
+"290
 [e = _TMR2ON -> -> 0 `i `b ]
-"278
+"291
 [e = _RC2 -> -> 0 `i `b ]
-"279
+"293
 [e ( _clear_screen ..  ]
-"280
+"294
+[e ( _display_cooking_complete_screen ..  ]
+"296
+[e ( _clear_screen ..  ]
+"297
 [e ( _display_modes ..  ]
-"281
+"298
 [e = _screen_flag -> -> 2 `i `uc ]
-"282
+"299
 }
 [e :U 165 ]
-"283
+"300
 [e $U 108  ]
-"285
+"302
 [e :U 166 ]
-"287
+"304
 [e $ ! != _total_seconds _last_total_seconds 167  ]
 {
-"288
+"305
 [e ( _display_preheat_time_remaining (1 _total_seconds ]
-"289
+"306
 [e = _last_total_seconds _total_seconds ]
-"290
+"307
 }
 [e :U 167 ]
-"292
+"309
 [e = _RC2 -> -> 1 `i `b ]
-"294
+"311
 [e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
-"296
+"313
 [e $ ! == -> _key `i -> 4 `i 168  ]
 {
-"297
+"314
 [e $ ! > _total_seconds -> -> 0 `i `ui 169  ]
 [e = _TMR2ON -> -> 1 `i `b ]
 [e :U 169 ]
-"298
+"315
 }
 [e $U 170  ]
 [e :U 168 ]
 [e $ ! == -> _key `i -> 5 `i 171  ]
 {
-"299
+"316
 [e = _TMR2ON -> -> 0 `i `b ]
-"300
+"317
 }
 [e $U 172  ]
 [e :U 171 ]
 [e $ ! == -> _key `i -> 6 `i 173  ]
 {
-"301
+"318
 [e = _TMR2ON -> -> 0 `i `b ]
-"302
+"319
 [e ( _clear_screen ..  ]
-"303
+"320
 [e ( _display_modes ..  ]
-"304
+"321
 [e = _screen_flag -> -> 2 `i `uc ]
-"305
+"322
 [e $U 108  ]
-"306
+"323
 }
 [e :U 173 ]
 [e :U 172 ]
 [e :U 170 ]
-"308
+"325
 [e $ ! == _total_seconds -> -> 0 `i `ui 174  ]
 {
-"309
+"326
 [e = _TMR2ON -> -> 0 `i `b ]
-"311
+"328
 [e ( _clear_screen ..  ]
-"312
+"329
 [e ( _display_time_screen ..  ]
-"313
+"330
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -806,54 +846,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 176  ]
 [e :U 175 ]
 {
-"314
+"331
 [e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
-"315
+"332
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> 4 `i 175  ]
 [e :U 176 ]
 }
-"316
+"333
 [e = _pos -> -> 0 `i `uc ]
-"317
+"334
 [e = _screen_flag -> -> 4 `i `uc ]
-"318
+"335
 }
 [e :U 174 ]
-"319
-[e $U 108  ]
-"321
-[e :U 178 ]
-"323
-[e = _total_seconds -> -> 30 `i `ui ]
-"324
-[e = _timer2_counter -> -> 0 `i `ui ]
-"325
-[e = _TMR2IF -> -> 0 `i `b ]
-"326
-[e = _TMR2ON -> -> 1 `i `b ]
-"327
-[e ( _clear_screen ..  ]
-"328
-[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
-"329
-[e ( _clcd_print (2 , :s 5C -> + -> 128 `i -> 1 `i `uc ]
-"330
-[e ( _clcd_print (2 , :s 6C -> + -> 192 `i -> 2 `i `uc ]
-"331
-[e ( _clcd_print (2 , :s 7C -> + -> 144 `i -> 2 `i `uc ]
-"332
-[e ( _clcd_print (2 , :s 8C -> + -> 208 `i -> 2 `i `uc ]
-"333
-[e ( _display_time_remaining (1 _total_seconds ]
-"334
-[e = _last_total_seconds _total_seconds ]
-"335
-[e = _screen_flag -> -> 5 `i `uc ]
 "336
 [e $U 108  ]
-"337
+"338
+[e :U 178 ]
+"340
+[e = _total_seconds -> -> 30 `i `ui ]
+"341
+[e = _timer2_counter -> -> 0 `i `ui ]
+"342
+[e = _TMR2IF -> -> 0 `i `b ]
+"343
+[e = _TMR2ON -> -> 1 `i `b ]
+"344
+[e ( _clear_screen ..  ]
+"345
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+"346
+[e ( _clcd_print (2 , :s 5C -> + -> 128 `i -> 1 `i `uc ]
+"347
+[e ( _clcd_print (2 , :s 6C -> + -> 192 `i -> 2 `i `uc ]
+"348
+[e ( _clcd_print (2 , :s 7C -> + -> 144 `i -> 2 `i `uc ]
+"349
+[e ( _clcd_print (2 , :s 8C -> + -> 208 `i -> 2 `i `uc ]
+"350
+[e ( _display_time_remaining (1 _total_seconds ]
+"351
+[e = _last_total_seconds _total_seconds ]
+"352
+[e = _screen_flag -> -> 5 `i `uc ]
+"353
+[e $U 108  ]
+"354
 }
 [e $U 108  ]
 [e :U 109 ]
@@ -869,15 +909,15 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 8 `i 178
  108 ]
 [e :U 108 ]
-"338
+"355
 }
 [e :U 105 ]
 [e $U 106  ]
 [e :U 107 ]
-"339
+"356
 [e ) -> 0 `i ]
 [e $UE 104  ]
-"341
+"358
 [e :UE 104 ]
 }
 [a 2C 52 46 32 83 116 97 114 116 0 ]

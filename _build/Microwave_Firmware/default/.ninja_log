@@ -1,46 +1,52 @@
 # ninja log v7
-89	644	7903537592580106	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-100	650	7903537592688900	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/timers.c.p1	fdf3f090b3f1899d
-75	688	7903537592439817	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/matrix_keypad.c.p1	b3daefcf69824dc0
-52	706	7903537592209117	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/clcd.c.p1	875c0ce56d529c27
-65	710	7903537592334631	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-710	3263	7903537598786301	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-33	532	7903539545647851	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-45	547	7903539545769261	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-548	3435	7903539550799645	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-105	654	7903542922646872	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+3	210	7903668016915847	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
 116	664	7903542922760833	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/timers.c.p1	fdf3f090b3f1899d
 93	674	7903542922528473	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/matrix_keypad.c.p1	b3daefcf69824dc0
 63	697	7903542922230483	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/clcd.c.p1	875c0ce56d529c27
-80	714	7903542922398478	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-714	3673	7903542928740911	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-132	694	7903602701043626	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-114	749	7903602700870917	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-749	3917	7903602707214661	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-61	564	7903603352030490	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-565	3442	7903603357061819	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-23	280	7903608210957953	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-281	1569	7903608213543649	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-35	329	7903613139567274	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-29	279	7903613545147370	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-280	1602	7903613547649811	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-29	275	7903614024650664	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-275	1603	7903614027110201	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-30	263	7903614750832376	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-264	1686	7903614753170065	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-26	271	7903615709327177	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-272	1617	7903615711777339	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-26	264	7903616441154710	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-265	1597	7903616443530180	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-26	270	7903617499150527	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-270	1615	7903617501600583	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-44	290	7903618184097733	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
-290	1654	7903618186547167	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-49	302	7903618854359938	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-303	1662	7903618856890301	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-32	270	7903620096069197	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-270	1591	7903620098441218	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-43	288	7903621205227659	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-288	1630	7903621207679905	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
-34	311	7903621415228352	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
-312	1639	7903621418010058	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
+23	293	7903659642003928	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+211	1552	7903668018987496	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	991090265887f17f
+51	330	7903670368210312	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/matrix_keypad.c.p1	b3daefcf69824dc0
+42	332	7903670368122459	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/clcd.c.p1	875c0ce56d529c27
+61	334	7903670368317576	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/timers.c.p1	fdf3f090b3f1899d
+46	362	7903670368168070	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+29	258	7903670609709116	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+49	313	7903671084918964	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+31	248	7903671514051012	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/buzzer.c.p1	61777a024954d020
+248	1606	7903671516222742	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+25	231	7903672044558363	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/buzzer.c.p1	61777a024954d020
+231	1564	7903672046624830	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+29	279	7903672949017732	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/buzzer.c.p1	61777a024954d020
+35	308	7903672949085570	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+308	1655	7903672951807367	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+36	269	7903673554728437	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+269	1599	7903673557052995	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+41	283	7903674675274383	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+284	1612	7903674677695895	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+32	333	7903675280760064	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+334	1696	7903675283778366	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+30	281	7903675462252121	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+282	1710	7903675464762560	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+46	353	7903677109151122	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+354	1748	7903677112218410	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+42	333	7903678214331830	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/buzzer.c.p1	61777a024954d020
+55	345	7903678214462171	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+49	346	7903678214401884	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+346	1688	7903678217377045	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+32	274	7903678633351737	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+274	1606	7903678635765352	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+33	261	7903679275858363	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1	b36b6e2842655616
+262	1553	7903679278154584	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+8	272	7903682130734967	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+272	1640	7903682133370603	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+35	275	7903682921302200	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+275	1639	7903682923708869	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+5	256	7903683794884530	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+256	1623	7903683797394237	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+38	294	7903685381567996	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+294	1667	7903685384134394	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+31	268	7903685869980672	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+269	1625	7903685872364051	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+31	290	7903686258025469	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+291	1675	7903686260621018	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f
+24	220	7903688553204703	CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1	8626193a58d9a3a4
+220	1569	7903688555179036	C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/out/Microwave_Firmware/default.elf	3dce30714e92756f

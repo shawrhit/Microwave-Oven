@@ -16,6 +16,7 @@ foreach(source_file ${Microwave_Firmware_default_default_XC8_FILE_TYPE_assembleP
 endforeach()
 
 set(Microwave_Firmware_default_default_XC8_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../buzzer.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../clcd.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../main.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../matrix_keypad.c"
