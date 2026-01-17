@@ -89,7 +89,7 @@ FSM uses pre-draw before switching states to minimize LCD flicker, and sparse up
 - Flicker mitigation: Pre-draw screens on entry and only update changing fields during countdown
 - Convection preheat: Placeholder 10 seconds; can be tied to temperature in future
 - No persistent settings yet; EEPROM could store favorites
-- Audio/fan not integrated; hardware blocks exist
+- Audio not integrated; hardware blocks exist
 
 ## Files
 
