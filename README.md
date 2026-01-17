@@ -89,15 +89,13 @@ FSM uses pre-draw before switching states to minimize LCD flicker, and sparse up
 
 - **FAN** (RC2): Turns ON when Timer2 is actively running (cooking/preheating); OFF during pause, stop, or idle
 - **BUZZER** (RC1): Simple on/off piezo buzzer with practical feedback patterns:
-  - 2 beeps on startup (POWER_SCREEN)
-  - 3 beeps when cooking completes (CLOCK_COUNTDOWN completion)
   - 1 beep per key press in menu mode
 
 ## Development Notes
 
 - Cursor handling: Time/Temp input uses digit highlighting via redraw; cursor is hidden on confirm `#`
 - Flicker mitigation: Pre-draw screens on entry and only update changing fields during countdown
-- Convection preheat: Fixed 10-second placeholder; can be tied to temperature calculation in future enhancements
+- Convection preheat: Fixed 30-second placeholder; can be tied to temperature calculation in future enhancements
 - No persistent settings; EEPROM storage could be added for user favorites
 - All code thoroughly commented with module headers and inline documentation
 
