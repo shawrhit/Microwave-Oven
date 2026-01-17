@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Clean build artifacts",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"rm -r _build"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

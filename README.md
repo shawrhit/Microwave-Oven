@@ -25,6 +25,7 @@ A PIC microcontroller-based microwave oven firmware with a modular architecture 
 - LCD Control: `RE2` (RS), `RE1` (EN)
 - Keypad Rows: `RD3–RD0` (outputs, pulled LOW to scan)
 - Keypad Columns: `RB2–RB0` (inputs, pullups enabled)
+- FAN: `RC2` (output, controlled during cooking/preheating)
 
 ## Build Instructions
 

@@ -1,0 +1,4 @@
+C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir
+C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_image_z56d5qOU.dir
+C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/edit_cache.dir
+C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/rebuild_cache.dir

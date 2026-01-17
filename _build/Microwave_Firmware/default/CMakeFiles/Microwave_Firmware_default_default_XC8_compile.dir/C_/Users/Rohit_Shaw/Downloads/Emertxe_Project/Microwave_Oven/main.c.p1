@@ -1,0 +1,890 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"11 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/timers.h
+[v _init_timer2 `(v ~T0 @X0 0 ef ]
+"40 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/clcd.h
+[v _init_clcd `(v ~T0 @X0 0 ef ]
+"32 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/matrix_keypad.h
+[v _init_matrix_keypad `(v ~T0 @X0 0 ef ]
+"2967 C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877a.h
+[v _TRISC2 `Vb ~T0 @X0 0 e@1082 ]
+"2712
+[v _RC2 `Vb ~T0 @X0 0 e@58 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"2901
+[v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
+[p mainexit ]
+"29 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+[v _display_power_screen `(v ~T0 @X0 0 ef ]
+[v F42 `(v ~T0 @X0 1 tf1`ul ]
+"20 c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\include/builtins.h
+[v __delay `JF42 ~T0 @X0 0 e ]
+[p i __delay ]
+"30 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+[v _clear_screen `(v ~T0 @X0 0 ef ]
+"31
+[v _display_modes `(v ~T0 @X0 0 ef ]
+"31 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/matrix_keypad.h
+[v _read_matrix_keypad `(uc ~T0 @X0 0 ef1`uc ]
+"32 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+[v _display_micro_mode_power `(v ~T0 @X0 0 ef ]
+"33
+[v _display_time_screen `(v ~T0 @X0 0 ef ]
+"36
+[v _display_grill_mode_power `(v ~T0 @X0 0 ef ]
+"37
+[v _display_convection_mode_banner `(v ~T0 @X0 0 ef ]
+"38
+[v _display_temp_screen `(v ~T0 @X0 0 ef ]
+"34
+[v _display_time `(v ~T0 @X0 0 ef2`*uc`uc ]
+"2904 C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877a.h
+[v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
+"43 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/clcd.h
+[v _clcd_write `(v ~T0 @X0 0 ef2`uc`uc ]
+"42
+[v _clcd_print `(v ~T0 @X0 0 ef2`*Cuc`uc ]
+"35 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven/oven.h
+[v _display_time_remaining `(v ~T0 @X0 0 ef1`ui ]
+"39
+[v _display_temp `(v ~T0 @X0 0 ef2`*uc`uc ]
+"40
+[v _display_preheat_banner `(v ~T0 @X0 0 ef ]
+"41
+[v _display_preheat_time_remaining `(v ~T0 @X0 0 ef1`ui ]
+"52 C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877a.h
+[; <" INDF equ 00h ;# ">
+"59
+[; <" TMR0 equ 01h ;# ">
+"66
+[; <" PCL equ 02h ;# ">
+"73
+[; <" STATUS equ 03h ;# ">
+"159
+[; <" FSR equ 04h ;# ">
+"166
+[; <" PORTA equ 05h ;# ">
+"216
+[; <" PORTB equ 06h ;# ">
+"278
+[; <" PORTC equ 07h ;# ">
+"340
+[; <" PORTD equ 08h ;# ">
+"402
+[; <" PORTE equ 09h ;# ">
+"434
+[; <" PCLATH equ 0Ah ;# ">
+"454
+[; <" INTCON equ 0Bh ;# ">
+"532
+[; <" PIR1 equ 0Ch ;# ">
+"594
+[; <" PIR2 equ 0Dh ;# ">
+"634
+[; <" TMR1 equ 0Eh ;# ">
+"641
+[; <" TMR1L equ 0Eh ;# ">
+"648
+[; <" TMR1H equ 0Fh ;# ">
+"655
+[; <" T1CON equ 010h ;# ">
+"730
+[; <" TMR2 equ 011h ;# ">
+"737
+[; <" T2CON equ 012h ;# ">
+"808
+[; <" SSPBUF equ 013h ;# ">
+"815
+[; <" SSPCON equ 014h ;# ">
+"885
+[; <" CCPR1 equ 015h ;# ">
+"892
+[; <" CCPR1L equ 015h ;# ">
+"899
+[; <" CCPR1H equ 016h ;# ">
+"906
+[; <" CCP1CON equ 017h ;# ">
+"964
+[; <" RCSTA equ 018h ;# ">
+"1059
+[; <" TXREG equ 019h ;# ">
+"1066
+[; <" RCREG equ 01Ah ;# ">
+"1073
+[; <" CCPR2 equ 01Bh ;# ">
+"1080
+[; <" CCPR2L equ 01Bh ;# ">
+"1087
+[; <" CCPR2H equ 01Ch ;# ">
+"1094
+[; <" CCP2CON equ 01Dh ;# ">
+"1152
+[; <" ADRESH equ 01Eh ;# ">
+"1159
+[; <" ADCON0 equ 01Fh ;# ">
+"1255
+[; <" OPTION_REG equ 081h ;# ">
+"1325
+[; <" TRISA equ 085h ;# ">
+"1375
+[; <" TRISB equ 086h ;# ">
+"1437
+[; <" TRISC equ 087h ;# ">
+"1499
+[; <" TRISD equ 088h ;# ">
+"1561
+[; <" TRISE equ 089h ;# ">
+"1618
+[; <" PIE1 equ 08Ch ;# ">
+"1680
+[; <" PIE2 equ 08Dh ;# ">
+"1720
+[; <" PCON equ 08Eh ;# ">
+"1754
+[; <" SSPCON2 equ 091h ;# ">
+"1816
+[; <" PR2 equ 092h ;# ">
+"1823
+[; <" SSPADD equ 093h ;# ">
+"1830
+[; <" SSPSTAT equ 094h ;# ">
+"1999
+[; <" TXSTA equ 098h ;# ">
+"2080
+[; <" SPBRG equ 099h ;# ">
+"2087
+[; <" CMCON equ 09Ch ;# ">
+"2157
+[; <" CVRCON equ 09Dh ;# ">
+"2222
+[; <" ADRESL equ 09Eh ;# ">
+"2229
+[; <" ADCON1 equ 09Fh ;# ">
+"2288
+[; <" EEDATA equ 010Ch ;# ">
+"2295
+[; <" EEADR equ 010Dh ;# ">
+"2302
+[; <" EEDATH equ 010Eh ;# ">
+"2309
+[; <" EEADRH equ 010Fh ;# ">
+"2316
+[; <" EECON1 equ 018Ch ;# ">
+"2361
+[; <" EECON2 equ 018Dh ;# ">
+"16 C:\Users\Rohit Shaw\Downloads\Emertxe Project\Microwave Oven\main.c
+[p x WDTE  =  OFF     ]
+"19
+[v _time_digits `uc ~T0 @X0 -> 4 `i e ]
+[i _time_digits
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"20
+[v _pos `uc ~T0 @X0 1 e ]
+[i _pos
+-> -> 0 `i `uc
+]
+"21
+[v _temp_digits `uc ~T0 @X0 -> 3 `i e ]
+[i _temp_digits
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"22
+[v _temp_pos `uc ~T0 @X0 1 e ]
+[i _temp_pos
+-> -> 0 `i `uc
+]
+"23
+[v _timer2_counter `Vui ~T0 @X0 1 e ]
+[i _timer2_counter
+-> -> 0 `i `ui
+]
+"24
+[v _total_seconds `Vui ~T0 @X0 1 e ]
+[i _total_seconds
+-> -> 0 `i `ui
+]
+"25
+[v _last_total_seconds `ui ~T0 @X0 1 e ]
+[i _last_total_seconds
+-> -> 0 `i `ui
+]
+"27
+[v _init_config `(v ~T0 @X0 1 sf ]
+{
+[e :U _init_config ]
+[f ]
+"28
+[e ( _init_timer2 ..  ]
+"29
+[e ( _init_clcd ..  ]
+"30
+[e ( _init_matrix_keypad ..  ]
+"31
+[e = _TRISC2 -> -> 0 `i `b ]
+"32
+[e = _RC2 -> -> 0 `i `b ]
+"33
+[e :UE 99 ]
+}
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"35
+[v _isr `(v ~T1 @X0 1 ef ]
+"36
+{
+[e :U _isr ]
+[f ]
+"38
+[e $ ! == -> _TMR2IF `i -> 1 `i 101  ]
+"39
+{
+"41
+[e ++ _timer2_counter -> -> 1 `i `Vui ]
+"44
+[e $ ! == _timer2_counter -> -> 1250 `i `ui 102  ]
+"45
+{
+"46
+[e $ ! > _total_seconds -> -> 0 `i `ui 103  ]
+"47
+{
+"48
+[e -- _total_seconds -> -> 1 `i `Vui ]
+"49
+}
+[e :U 103 ]
+"50
+[e = _timer2_counter -> -> 0 `i `ui ]
+"51
+}
+[e :U 102 ]
+"54
+[e = _TMR2IF -> -> 0 `i `b ]
+"55
+}
+[e :U 101 ]
+"56
+[e :UE 100 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"58
+[v _main `(i ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"59
+[e ( _init_config ..  ]
+"60
+[v _screen_flag `uc ~T0 @X0 1 a ]
+[e = _screen_flag -> -> 1 `i `uc ]
+"61
+[v _key `uc ~T0 @X0 1 a ]
+[e = _key -> -> 255 `i `uc ]
+"63
+[e :U 106 ]
+"64
+{
+"65
+[e $U 109  ]
+{
+"67
+[e :U 110 ]
+"69
+[e ( _display_power_screen ..  ]
+"70
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"72
+[e ( _clear_screen ..  ]
+"75
+[e ( _display_modes ..  ]
+"77
+[e = _screen_flag -> -> 2 `i `uc ]
+"78
+[e $U 108  ]
+"80
+[e :U 111 ]
+"82
+[e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
+"84
+[e = _RC2 -> -> 0 `i `b ]
+"86
+[e $ ! == -> _key `i -> 1 `i 112  ]
+{
+"88
+[e = _screen_flag -> -> 3 `i `uc ]
+"90
+}
+[e $U 113  ]
+"91
+[e :U 112 ]
+[e $ ! == -> _key `i -> 2 `i 114  ]
+{
+"93
+[e = _screen_flag -> -> 6 `i `uc ]
+"94
+}
+[e $U 115  ]
+"95
+[e :U 114 ]
+[e $ ! == -> _key `i -> 3 `i 116  ]
+{
+"96
+[e = _screen_flag -> -> 7 `i `uc ]
+"97
+}
+[e $U 117  ]
+"98
+[e :U 116 ]
+[e $ ! == -> _key `i -> 4 `i 118  ]
+{
+"99
+[e = _screen_flag -> -> 8 `i `uc ]
+"100
+}
+[e :U 118 ]
+[e :U 117 ]
+[e :U 115 ]
+[e :U 113 ]
+"101
+[e $U 108  ]
+"103
+[e :U 119 ]
+"104
+[e ( _clear_screen ..  ]
+"105
+[e ( _display_micro_mode_power ..  ]
+"106
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"107
+[e ( _clear_screen ..  ]
+"108
+[e ( _display_time_screen ..  ]
+"110
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 120  ]
+[e $U 121  ]
+[e :U 120 ]
+{
+"111
+[e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"112
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 120  ]
+[e :U 121 ]
+}
+"113
+[e = _pos -> -> 0 `i `uc ]
+"114
+[e = _screen_flag -> -> 4 `i `uc ]
+"115
+[e $U 108  ]
+"117
+[e :U 123 ]
+"119
+[e ( _display_grill_mode_power ..  ]
+"120
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"122
+[e ( _clear_screen ..  ]
+"123
+[e ( _display_time_screen ..  ]
+"125
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 124  ]
+[e $U 125  ]
+[e :U 124 ]
+{
+"126
+[e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"127
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 124  ]
+[e :U 125 ]
+}
+"128
+[e = _pos -> -> 0 `i `uc ]
+"129
+[e = _screen_flag -> -> 4 `i `uc ]
+"130
+[e $U 108  ]
+"132
+[e :U 127 ]
+"133
+[e ( _display_convection_mode_banner ..  ]
+"134
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"136
+[e ( _clear_screen ..  ]
+"137
+[e ( _display_temp_screen ..  ]
+"138
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 3 `i 128  ]
+[e $U 129  ]
+[e :U 128 ]
+{
+"139
+[e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
+"140
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 3 `i 128  ]
+[e :U 129 ]
+}
+"141
+[e = _temp_pos -> -> 0 `i `uc ]
+"142
+[e = _screen_flag -> -> 9 `i `uc ]
+"143
+[e $U 108  ]
+"145
+[e :U 131 ]
+"147
+[e ( _display_time (2 , &U _time_digits _pos ]
+"149
+[e = _RC2 -> -> 0 `i `b ]
+"151
+[e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
+"153
+[e $ ! && && >= -> _key `i -> 1 `i <= -> _key `i -> 9 `i < -> _pos `i -> 4 `i 132  ]
+{
+"155
+[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux _key ]
+"156
+[e ++ _pos -> -> 1 `i `uc ]
+"157
+}
+[e $U 133  ]
+"158
+[e :U 132 ]
+[e $ ! && == -> _key `i -> -> -> 0 `i `uc `i < -> _pos `i -> 4 `i 134  ]
+{
+"160
+[e = *U + &U _time_digits * -> _pos `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"161
+[e ++ _pos -> -> 1 `i `uc ]
+"162
+}
+[e $U 135  ]
+"163
+[e :U 134 ]
+[e $ ! == -> _key `i -> -> -> 42 `ui `uc `i 136  ]
+{
+"165
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 137  ]
+[e $U 138  ]
+[e :U 137 ]
+{
+"166
+[e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"167
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 137  ]
+[e :U 138 ]
+}
+"168
+[e = _pos -> -> 0 `i `uc ]
+"169
+}
+[e $U 140  ]
+"170
+[e :U 136 ]
+[e $ ! == -> _key `i -> -> -> 35 `ui `uc `i 141  ]
+{
+"172
+[e = _total_seconds -> + + + * -> *U + &U _time_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 600 `i * -> *U + &U _time_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 60 `i * -> *U + &U _time_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i -> 10 `i -> *U + &U _time_digits * -> -> -> 3 `i `ui `ux -> -> # *U &U _time_digits `ui `ux `i `ui ]
+"176
+[e = _timer2_counter -> -> 0 `i `ui ]
+"177
+[e = _TMR2IF -> -> 0 `i `b ]
+"178
+[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
+"181
+[e ( _clear_screen ..  ]
+"182
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+"183
+[e ( _clcd_print (2 , :s 1C -> + -> 128 `i -> 1 `i `uc ]
+"184
+[e ( _clcd_print (2 , :s 2C -> + -> 192 `i -> 2 `i `uc ]
+"185
+[e ( _clcd_print (2 , :s 3C -> + -> 144 `i -> 2 `i `uc ]
+"186
+[e ( _clcd_print (2 , :s 4C -> + -> 208 `i -> 2 `i `uc ]
+"187
+[e ( _display_time_remaining (1 _total_seconds ]
+"188
+[e = _last_total_seconds _total_seconds ]
+"190
+[e = _screen_flag -> -> 5 `i `uc ]
+"191
+[e $U 108  ]
+"192
+}
+[e :U 141 ]
+[e :U 140 ]
+[e :U 135 ]
+[e :U 133 ]
+"194
+[e $U 108  ]
+"196
+[e :U 142 ]
+"198
+[e ( _display_temp (2 , &U _temp_digits _temp_pos ]
+"200
+[e = _RC2 -> -> 0 `i `b ]
+"202
+[e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
+"204
+[e $ ! && && >= -> _key `i -> 1 `i <= -> _key `i -> 9 `i < -> _temp_pos `i -> 3 `i 143  ]
+{
+"205
+[e = *U + &U _temp_digits * -> _temp_pos `ux -> -> # *U &U _temp_digits `ui `ux _key ]
+"206
+[e ++ _temp_pos -> -> 1 `i `uc ]
+"207
+}
+[e $U 144  ]
+"208
+[e :U 143 ]
+[e $ ! && == -> _key `i -> -> -> 0 `i `uc `i < -> _temp_pos `i -> 3 `i 145  ]
+{
+"209
+[e = *U + &U _temp_digits * -> _temp_pos `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
+"210
+[e ++ _temp_pos -> -> 1 `i `uc ]
+"211
+}
+[e $U 146  ]
+"212
+[e :U 145 ]
+[e $ ! == -> _key `i -> -> -> 42 `ui `uc `i 147  ]
+{
+"213
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 3 `i 148  ]
+[e $U 149  ]
+[e :U 148 ]
+{
+"214
+[e = *U + &U _temp_digits * -> _i `ux -> -> # *U &U _temp_digits `ui `ux -> -> 0 `i `uc ]
+"215
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 3 `i 148  ]
+[e :U 149 ]
+}
+"216
+[e = _temp_pos -> -> 0 `i `uc ]
+"217
+}
+[e $U 151  ]
+"218
+[e :U 147 ]
+[e $ ! == -> _key `i -> -> -> 35 `ui `uc `i 152  ]
+{
+"220
+[v _temp_value `ui ~T0 @X0 1 a ]
+[e = _temp_value -> + + * -> *U + &U _temp_digits * -> -> -> 0 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 100 `i * -> *U + &U _temp_digits * -> -> -> 1 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i -> 10 `i -> *U + &U _temp_digits * -> -> -> 2 `i `ui `ux -> -> # *U &U _temp_digits `ui `ux `i `ui ]
+"223
+[e _temp_value ]
+"225
+[e = _total_seconds -> -> 30 `i `ui ]
+"226
+[e = _timer2_counter -> -> 0 `i `ui ]
+"227
+[e = _TMR2IF -> -> 0 `i `b ]
+"228
+[e = _TMR2ON -> ? > _total_seconds -> -> 0 `i `ui : -> 1 `i -> 0 `i `b ]
+"230
+[e ( _clear_screen ..  ]
+"231
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+"232
+[e ( _display_preheat_banner ..  ]
+"233
+[e ( _display_preheat_time_remaining (1 _total_seconds ]
+"234
+[e = _last_total_seconds _total_seconds ]
+"236
+[e = _screen_flag -> -> 10 `i `uc ]
+"237
+}
+[e :U 152 ]
+[e :U 151 ]
+[e :U 146 ]
+[e :U 144 ]
+"238
+[e $U 108  ]
+"240
+[e :U 153 ]
+"242
+[e $ ! != _total_seconds _last_total_seconds 154  ]
+{
+"243
+[e ( _display_time_remaining (1 _total_seconds ]
+"244
+[e = _last_total_seconds _total_seconds ]
+"245
+}
+[e :U 154 ]
+"248
+[e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
+"251
+[e $ ! == -> _TMR2ON `i -> 1 `i 155  ]
+{
+"252
+[e = _RC2 -> -> 1 `i `b ]
+"253
+}
+[e $U 156  ]
+[e :U 155 ]
+{
+"254
+[e = _RC2 -> -> 0 `i `b ]
+"255
+}
+[e :U 156 ]
+"258
+[e $ ! == -> _key `i -> 4 `i 157  ]
+{
+"259
+[e $ ! && > _total_seconds -> -> 0 `i `ui == -> _TMR2ON `i -> 0 `i 158  ]
+{
+"260
+[e = _TMR2ON -> -> 1 `i `b ]
+"261
+}
+[e $U 159  ]
+[e :U 158 ]
+[e $ ! == -> _TMR2ON `i -> 1 `i 160  ]
+{
+"262
+[e =+ _total_seconds -> -> 30 `i `Vui ]
+"263
+}
+[e :U 160 ]
+[e :U 159 ]
+"264
+}
+[e $U 161  ]
+[e :U 157 ]
+[e $ ! == -> _key `i -> 5 `i 162  ]
+{
+"265
+[e = _TMR2ON -> -> 0 `i `b ]
+"266
+}
+[e $U 163  ]
+[e :U 162 ]
+[e $ ! == -> _key `i -> 6 `i 164  ]
+{
+"267
+[e = _TMR2ON -> -> 0 `i `b ]
+"268
+[e = _RC2 -> -> 0 `i `b ]
+"269
+[e ( _clear_screen ..  ]
+"270
+[e ( _display_modes ..  ]
+"271
+[e = _screen_flag -> -> 2 `i `uc ]
+"272
+[e $U 108  ]
+"273
+}
+[e :U 164 ]
+[e :U 163 ]
+[e :U 161 ]
+"276
+[e $ ! == _total_seconds -> -> 0 `i `ui 165  ]
+{
+"277
+[e = _TMR2ON -> -> 0 `i `b ]
+"278
+[e = _RC2 -> -> 0 `i `b ]
+"279
+[e ( _clear_screen ..  ]
+"280
+[e ( _display_modes ..  ]
+"281
+[e = _screen_flag -> -> 2 `i `uc ]
+"282
+}
+[e :U 165 ]
+"283
+[e $U 108  ]
+"285
+[e :U 166 ]
+"287
+[e $ ! != _total_seconds _last_total_seconds 167  ]
+{
+"288
+[e ( _display_preheat_time_remaining (1 _total_seconds ]
+"289
+[e = _last_total_seconds _total_seconds ]
+"290
+}
+[e :U 167 ]
+"292
+[e = _RC2 -> -> 1 `i `b ]
+"294
+[e = _key ( _read_matrix_keypad (1 -> -> 1 `i `uc ]
+"296
+[e $ ! == -> _key `i -> 4 `i 168  ]
+{
+"297
+[e $ ! > _total_seconds -> -> 0 `i `ui 169  ]
+[e = _TMR2ON -> -> 1 `i `b ]
+[e :U 169 ]
+"298
+}
+[e $U 170  ]
+[e :U 168 ]
+[e $ ! == -> _key `i -> 5 `i 171  ]
+{
+"299
+[e = _TMR2ON -> -> 0 `i `b ]
+"300
+}
+[e $U 172  ]
+[e :U 171 ]
+[e $ ! == -> _key `i -> 6 `i 173  ]
+{
+"301
+[e = _TMR2ON -> -> 0 `i `b ]
+"302
+[e ( _clear_screen ..  ]
+"303
+[e ( _display_modes ..  ]
+"304
+[e = _screen_flag -> -> 2 `i `uc ]
+"305
+[e $U 108  ]
+"306
+}
+[e :U 173 ]
+[e :U 172 ]
+[e :U 170 ]
+"308
+[e $ ! == _total_seconds -> -> 0 `i `ui 174  ]
+{
+"309
+[e = _TMR2ON -> -> 0 `i `b ]
+"311
+[e ( _clear_screen ..  ]
+"312
+[e ( _display_time_screen ..  ]
+"313
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 175  ]
+[e $U 176  ]
+[e :U 175 ]
+{
+"314
+[e = *U + &U _time_digits * -> _i `ux -> -> # *U &U _time_digits `ui `ux -> -> 0 `i `uc ]
+"315
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 175  ]
+[e :U 176 ]
+}
+"316
+[e = _pos -> -> 0 `i `uc ]
+"317
+[e = _screen_flag -> -> 4 `i `uc ]
+"318
+}
+[e :U 174 ]
+"319
+[e $U 108  ]
+"321
+[e :U 178 ]
+"323
+[e = _total_seconds -> -> 30 `i `ui ]
+"324
+[e = _timer2_counter -> -> 0 `i `ui ]
+"325
+[e = _TMR2IF -> -> 0 `i `b ]
+"326
+[e = _TMR2ON -> -> 1 `i `b ]
+"327
+[e ( _clear_screen ..  ]
+"328
+[e ( _clcd_write (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+"329
+[e ( _clcd_print (2 , :s 5C -> + -> 128 `i -> 1 `i `uc ]
+"330
+[e ( _clcd_print (2 , :s 6C -> + -> 192 `i -> 2 `i `uc ]
+"331
+[e ( _clcd_print (2 , :s 7C -> + -> 144 `i -> 2 `i `uc ]
+"332
+[e ( _clcd_print (2 , :s 8C -> + -> 208 `i -> 2 `i `uc ]
+"333
+[e ( _display_time_remaining (1 _total_seconds ]
+"334
+[e = _last_total_seconds _total_seconds ]
+"335
+[e = _screen_flag -> -> 5 `i `uc ]
+"336
+[e $U 108  ]
+"337
+}
+[e $U 108  ]
+[e :U 109 ]
+[e [\ _screen_flag , $ -> 1 `i 110
+ , $ -> 2 `i 111
+ , $ -> 3 `i 119
+ , $ -> 6 `i 123
+ , $ -> 7 `i 127
+ , $ -> 4 `i 131
+ , $ -> 9 `i 142
+ , $ -> 5 `i 153
+ , $ -> 10 `i 166
+ , $ -> 8 `i 178
+ 108 ]
+[e :U 108 ]
+"338
+}
+[e :U 105 ]
+[e $U 106  ]
+[e :U 107 ]
+"339
+[e ) -> 0 `i ]
+[e $UE 104  ]
+"341
+[e :UE 104 ]
+}
+[a 2C 52 46 32 83 116 97 114 116 0 ]
+[a 6C 52 46 32 43 51 48 115 0 ]
+[a 4C 54 46 32 83 116 111 112 0 ]
+[a 8C 54 46 32 83 116 111 112 0 ]
+[a 3C 53 46 32 80 97 117 115 101 0 ]
+[a 7C 53 46 32 80 97 117 115 101 0 ]
+[a 1C 84 105 109 101 32 82 101 109 58 0 ]
+[a 5C 84 105 109 101 32 82 101 109 58 0 ]

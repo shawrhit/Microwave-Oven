@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -D__MPLAB_DEBUGGER_SIMULATOR=1 -c -mcpu=16F877A \"-mdfp=C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\" -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\Microwave_Firmware_default_default_XC8_compile.dir\\C_\\Users\\Rohit_Shaw\\Downloads\\Emertxe_Project\\Microwave_Oven\\clcd.c.p1 -c \"C:\\Users\\Rohit Shaw\\Downloads\\Emertxe Project\\Microwave Oven\\clcd.c\"",
+  "file": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/clcd.c",
+  "output": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/clcd.c.p1"
+},
+{
+  "directory": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -D__MPLAB_DEBUGGER_SIMULATOR=1 -c -mcpu=16F877A \"-mdfp=C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\" -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\Microwave_Firmware_default_default_XC8_compile.dir\\C_\\Users\\Rohit_Shaw\\Downloads\\Emertxe_Project\\Microwave_Oven\\main.c.p1 -c \"C:\\Users\\Rohit Shaw\\Downloads\\Emertxe Project\\Microwave Oven\\main.c\"",
+  "file": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/main.c",
+  "output": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/main.c.p1"
+},
+{
+  "directory": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -D__MPLAB_DEBUGGER_SIMULATOR=1 -c -mcpu=16F877A \"-mdfp=C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\" -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\Microwave_Firmware_default_default_XC8_compile.dir\\C_\\Users\\Rohit_Shaw\\Downloads\\Emertxe_Project\\Microwave_Oven\\matrix_keypad.c.p1 -c \"C:\\Users\\Rohit Shaw\\Downloads\\Emertxe Project\\Microwave Oven\\matrix_keypad.c\"",
+  "file": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/matrix_keypad.c",
+  "output": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/matrix_keypad.c.p1"
+},
+{
+  "directory": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -D__MPLAB_DEBUGGER_SIMULATOR=1 -c -mcpu=16F877A \"-mdfp=C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\" -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\Microwave_Firmware_default_default_XC8_compile.dir\\C_\\Users\\Rohit_Shaw\\Downloads\\Emertxe_Project\\Microwave_Oven\\oven.c.p1 -c \"C:\\Users\\Rohit Shaw\\Downloads\\Emertxe Project\\Microwave Oven\\oven.c\"",
+  "file": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/oven.c",
+  "output": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/oven.c.p1"
+},
+{
+  "directory": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -D__MPLAB_DEBUGGER_SIMULATOR=1 -c -mcpu=16F877A \"-mdfp=C:/Users/Rohit Shaw/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\" -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\Microwave_Firmware_default_default_XC8_compile.dir\\C_\\Users\\Rohit_Shaw\\Downloads\\Emertxe_Project\\Microwave_Oven\\timers.c.p1 -c \"C:\\Users\\Rohit Shaw\\Downloads\\Emertxe Project\\Microwave Oven\\timers.c\"",
+  "file": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/timers.c",
+  "output": "C:/Users/Rohit Shaw/Downloads/Emertxe Project/Microwave Oven/_build/Microwave_Firmware/default/CMakeFiles/Microwave_Firmware_default_default_XC8_compile.dir/C_/Users/Rohit_Shaw/Downloads/Emertxe_Project/Microwave_Oven/timers.c.p1"
+}
+]
