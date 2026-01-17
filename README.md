@@ -10,14 +10,6 @@ A PIC microcontroller-based microwave oven firmware with a modular architecture 
 - Input: 4x3 Matrix Keypad (STATE and LEVEL scanning)
 - Core Pattern: Screen-state finite state machine (FSM)
 
-## Folder Structure
-
-| Path                                  | Purpose                                                                                                                             |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| _build                                | CMake build tree (Ninja). Safe to delete; will be regenerated.                                                                      |
-| cmake                                 | CMake project and presets for default and production configurations.                                                                 |
-| .vscode                               | VS Code workspace settings and MPLAB project integration.                                                                           |
-| out                                   | Final build artifacts (firmware images).                                                                                            |
 
 ## Hardware Mapping
 
@@ -98,7 +90,7 @@ FSM uses pre-draw before switching states to minimize LCD flicker, and sparse up
 - Flicker mitigation: Pre-draw screens on entry and only update changing fields during countdown
 - Convection preheat: Placeholder 10 seconds; can be tied to temperature in future
 - No persistent settings yet; EEPROM could store favorites
-- Audio/fan not integrated; hardware blocks exist
+- Audio not integrated; hardware blocks exist
 
 ## Files
 
